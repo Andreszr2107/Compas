@@ -10,6 +10,11 @@
 h1{
     align-items: center;
 }
+
+#refresh{
+    background-color: #F35454;
+    width: 206px;
+}
 button{
     background-color: #8ba5ec;
     width: 108px;
@@ -17,24 +22,7 @@ button{
 }
 input{
     background-color: white;
-    width: 20px;
+    width: 50px;
 }
 
-
-.calc2{
-    background-color: grey;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
-    width: 108px;
-    
-
-}
-.calc3{
-    background-color: grey;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
-    width: 108px;
-    
-
-}
 
