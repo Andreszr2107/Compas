@@ -1,4 +1,4 @@
-let matriz;
+//let matriz;
 
 
 const m2=document.getElementById("m2"),
@@ -10,6 +10,7 @@ const contenedor= document.querySelector("#yo1");
 /*Sistema 2x2*/
 
 m2.addEventListener("click",matriz2);
+
 let casilla=0;
 function matriz2(){
     let div=document.createElement("div");
@@ -21,12 +22,12 @@ function matriz2(){
     document.querySelector(".calc2").addEventListener("click",calc2);
     
     function calc2(){
-        x=Number(document.querySelector(".x").value);
-        y=Number(document.querySelector(".y").value);
-        ind=Number(document.querySelector(".ind").value);
-        x2=Number(document.querySelector(".x2").value);
-        y2=Number(document.querySelector(".y2").value);
-        ind2=Number(document.querySelector(".ind2").value);
+        x=eval(document.querySelector(".x").value);
+        y=eval(document.querySelector(".y").value);
+        ind=eval(document.querySelector(".ind").value);
+        x2=eval(document.querySelector(".x2").value);
+        y2=eval(document.querySelector(".y2").value);
+        ind2=eval(document.querySelector(".ind2").value);
         det=(x*y2)-(x2*y);
         detx=((ind*y2)-(y*ind2));
         dety=((x*ind2)-(ind*x2));
@@ -61,6 +62,7 @@ function matriz2(){
 
 
 m3.addEventListener("click",matriz3);
+
 function matriz3(){
     let div=document.createElement("div");
     div.innerHTML='<input type="text" class="x">x +</input><input type="text" class="y">y +</input><input type="text" class="z">z = </input><input type="text" class="ind"></input>';
@@ -74,18 +76,18 @@ function matriz3(){
     document.querySelector(".calc3").addEventListener("click",calc3);
     
     function calc3(){
-        x=Number(document.querySelector(".x").value);
-        y=Number(document.querySelector(".y").value);        
-        z=Number(document.querySelector(".z").value);
-        ind=Number(document.querySelector(".ind").value);
-        x2=Number(document.querySelector(".x2").value);
-        y2=Number(document.querySelector(".y2").value);
-        z2=Number(document.querySelector(".z2").value);
-        ind2=Number(document.querySelector(".ind2").value);
-        x3=Number(document.querySelector(".x3").value);
-        y3=Number(document.querySelector(".y3").value);
-        z3=Number(document.querySelector(".z3").value);
-        ind3=Number(document.querySelector(".ind3").value);
+        x=eval(document.querySelector(".x").value);
+        y=eval(document.querySelector(".y").value);        
+        z=eval(document.querySelector(".z").value);
+        ind=eval(document.querySelector(".ind").value);
+        x2=eval(document.querySelector(".x2").value);
+        y2=eval(document.querySelector(".y2").value);
+        z2=eval(document.querySelector(".z2").value);
+        ind2=eval(document.querySelector(".ind2").value);
+        x3=eval(document.querySelector(".x3").value);
+        y3=eval(document.querySelector(".y3").value);
+        z3=eval(document.querySelector(".z3").value);
+        ind3=eval(document.querySelector(".ind3").value);
         det=((x*y2*z3)+(y*z2*x3)+(z*x2*y3))-((z*y2*x3)+(x*z2*y3)+(y*x2*z3));
         detx=(((ind*y2*z3)+(y*z2*ind3)+(z*ind2*y3))-((z*y2*ind3)+(ind*z2*y3)+(y*ind2*z3)));
         dety=(((x*ind2*z3)+(ind*z2*x3)+(z*x2*ind3))-((z*ind2*x3)+(x*z2*ind3)+(ind*x2*z3)));
@@ -136,26 +138,26 @@ function matriz4(){
     contenedor.appendChild(div4);
     document.querySelector(".calc4").addEventListener("click",calc4);
     function calc4(){
-        w=Number(document.querySelector(".w").value);
-        x=Number(document.querySelector(".x").value);
-        y=Number(document.querySelector(".y").value);        
-        z=Number(document.querySelector(".z").value);
-        ind=Number(document.querySelector(".ind").value);
-        w2=Number(document.querySelector(".w2").value);
-        x2=Number(document.querySelector(".x2").value);
-        y2=Number(document.querySelector(".y2").value);
-        z2=Number(document.querySelector(".z2").value);
-        ind2=Number(document.querySelector(".ind2").value);
-        w3=Number(document.querySelector(".w3").value);
-        x3=Number(document.querySelector(".x3").value);
-        y3=Number(document.querySelector(".y3").value);
-        z3=Number(document.querySelector(".z3").value);
-        ind3=Number(document.querySelector(".ind3").value);
-        w4=Number(document.querySelector(".w4").value);
-        x4=Number(document.querySelector(".x4").value);
-        y4=Number(document.querySelector(".y4").value);
-        z4=Number(document.querySelector(".z4").value);
-        ind4=Number(document.querySelector(".ind4").value);
+        w=eval(document.querySelector(".w").value);
+        x=eval(document.querySelector(".x").value);
+        y=eval(document.querySelector(".y").value);        
+        z=eval(document.querySelector(".z").value);
+        ind=eval(document.querySelector(".ind").value);
+        w2=eval(document.querySelector(".w2").value);
+        x2=eval(document.querySelector(".x2").value);
+        y2=eval(document.querySelector(".y2").value);
+        z2=eval(document.querySelector(".z2").value);
+        ind2=eval(document.querySelector(".ind2").value);
+        w3=eval(document.querySelector(".w3").value);
+        x3=eval(document.querySelector(".x3").value);
+        y3=eval(document.querySelector(".y3").value);
+        z3=eval(document.querySelector(".z3").value);
+        ind3=eval(document.querySelector(".ind3").value);
+        w4=eval(document.querySelector(".w4").value);
+        x4=eval(document.querySelector(".x4").value);
+        y4=eval(document.querySelector(".y4").value);
+        z4=eval(document.querySelector(".z4").value);
+        ind4=eval(document.querySelector(".ind4").value);
         det=(w*(((x2*y3*z4)+(y2*z3*x4)+(z2*x3*y4))-((y2*x3*z4)+(x2*z3*y4)+(z2*y3*x4))))+((-1*x)*(((w2*y3*z4)+(y2*z3*w4)+(z2*w3*y4))-((y2*w3*z4)+(w2*z3*y4)+(z2*y3*w4))))+(y*(((w2*x3*z4)+(x2*z3*w4)+(z2*w3*x4))-((x2*w3*z4)+(w2*z3*x4)+(z2*x3*w4))))+((-1*z)*(((w2*x3*y4)+(x2*y3*w4)+(y2*w3*x4))-((x2*w3*y4)+(w2*y3*x4)+(y2*x3*w4))));
         detw=(ind*(((x2*y3*z4)+(y2*z3*x4)+(z2*x3*y4))-((y2*x3*z4)+(x2*z3*y4)+(z2*y3*x4))))+((-1*x)*(((ind2*y3*z4)+(y2*z3*ind4)+(z2*ind3*y4))-((y2*ind3*z4)+(ind2*z3*y4)+(z2*y3*ind4))))+(y*(((ind2*x3*z4)+(x2*z3*ind4)+(z2*ind3*x4))-((x2*ind3*z4)+(ind2*z3*x4)+(z2*x3*ind4))))+((-1*z)*(((ind2*x3*y4)+(x2*y3*ind4)+(y2*ind3*x4))-((x2*ind3*y4)+(ind2*y3*x4)+(y2*x3*ind4))));
         detx=(w*(((ind2*y3*z4)+(y2*z3*ind4)+(z2*ind3*y4))-((y2*ind3*z4)+(ind2*z3*y4)+(z2*y3*ind4))))+((-1*ind)*(((w2*y3*z4)+(y2*z3*w4)+(z2*w3*y4))-((y2*w3*z4)+(w2*z3*y4)+(z2*y3*w4))))+(y*(((w2*ind3*z4)+(ind2*z3*w4)+(z2*w3*ind4))-((ind2*w3*z4)+(w2*z3*ind4)+(z2*ind3*w4))))+((-1*z)*(((w2*ind3*y4)+(ind2*y3*w4)+(y2*w3*ind4))-((ind2*w3*y4)+(w2*y3*ind4)+(y2*ind3*w4))));
@@ -187,6 +189,11 @@ function matriz4(){
             contenedor.appendChild(div7);
         }
     }
+}
+
+r.addEventListener("click", refresh)
+function refresh(){
+    location.reload();
 }
 
 r.addEventListener("click", refresh)
