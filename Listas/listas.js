@@ -195,8 +195,3 @@ r.addEventListener("click", refresh)
 function refresh(){
     location.reload();
 }
-
-r.addEventListener("click", refresh)
-function refresh(){
-    location.reload();
-}
