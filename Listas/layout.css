@@ -7,22 +7,49 @@
     list-style-type: none;
     background-color: #c8c8c8;
 }
-h1{
+
+h1, h2{
     align-items: center;
+    text-align: center;
+    
 }
 
-#refresh{
-    background-color: #F35454;
-    width: 206px;
-}
+
 button{
-    background-color: #8ba5ec;
-    width: 108px;
+    background-color: #575757a4;
+    width: 58px;
     font-size: large;
+    margin: 0 15px;
+    height: 40px;
+    border: 0px;
+
+}
+button:hover{
+    background-color: azure;
+}
+
+.calc2, .calc3, .calc4 {
+    background-color: #575757a4;
+    width: 100px;
+    font-size: large;
+    margin: 0 15px;
+    height: 40px;
+    border: 0px;
+
+}
+#refresh{
+    background-color: #911717;
+    width: 110px;
+    margin: 2px 80px;
+    
+}
+#refresh:hover{
+    background-color: rgba(192, 2, 2, 0.507);
 }
 input{
     background-color: white;
     width: 50px;
+    margin: 2px 15px;
+    border: 0px;
+    text-align: right;     
 }
-
-
